@@ -1,0 +1,14 @@
+Notification Service
+
+. Email notifications 
+. Job alert system
+
+Task 12: Set up Notification Service boilerplate
+Description: Create a new Flask application for the Notification Service. Set up the project structure, including directories for models, routes, and utilities. Initialize a virtual environment and install necessary dependencies. Estimated time: 3 hours
+
+ Notes: Use Flask-RESTful for API development and Flask-SQLAlchemy for database interactions. 
+
+Task 13: Implement email notification system
+Description: Set up email sending functionality using a service like SendGrid or Amazon SES. Create API endpoints for triggering email notifications. Implement email templates for various notification types. Estimated time: 8 hours
+
+ Notes: Use a task queue (e.g., Celery) for asynchronous email sending to improve performance.
