@@ -1,6 +1,9 @@
-import os
+from app import create_app, db
 
-class Config:
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///jobs.db'
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = os.urandom(24)
+app = create_app()
+
+with app.app_context():
+    db.create_all()
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)
